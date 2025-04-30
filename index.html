@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GiveChain - Home</title>
+
+  <!-- Fonts & Styles -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="aos/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwHN3f_ODkxyUb7q3gyWONQ0AUNk73v4B8Dg&s" alt="GiveChain Logo">
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="causes.html">Causes</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Signup</a></li>
+    </ul>
+    <button class="wallet-btn" id="walletConnectBtn">Connect Wallet</button>
+    <div class="burger" id="burger">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+  <button class="donation-btn" onclick="sendDonation()">
+    <img src="https://cdn-icons-png.flaticon.com/512/2099/2099077.png" alt="Donate Icon" />
+    Send Test Donation
+  </button>
+  
+<!-- Wallet Modal -->
+<div class="wallet-modal" id="walletModal">
+  <div class="wallet-modal-content">
+    <h2>Connect Your Wallet</h2>
+    <p>Click below to connect with MetaMask:</p>
+    <button class="connect-btn" onclick="connectWallet()">Connect with MetaMask</button>
+    <button class="close-btn" onclick="closeWalletModal()">Close</button>
+  </div>
+</div>
+
+ <!-- Hero Section with changing background -->
+<section class="hero changing-bg">
+  <div class="hero-content">
+    <h1>Empower Change with <span style="color:#ff7f50;">GiveChain</span></h1>
+    <p>Decentralized Donations. Transparent Impact.</p>
+    <a href="donate.html" class="cta-btn">Donate Now</a>
+  </div>
+</section>
+
+ <!-- Features Section -->
+<section class="features" data-aos="fade-up">
+  <div class="card-box feature" data-aos="fade-right">
+    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828640.png" class="feature-icon" alt="Transparency" />
+    <h2>Transparency</h2>
+    <p>Every donation is securely recorded on the blockchain ensuring full traceability.</p>
+  </div>
+  <div class="card-box feature" data-aos="fade-up">
+    <img src="https://cdn-icons-png.flaticon.com/512/992/992700.png" class="feature-icon" alt="Trust" />
+    <h2>Trust</h2>
+    <p>Causes are verified, ensuring your support reaches those in need.</p>
+  </div>
+  <div class="card-box feature" data-aos="fade-left">
+    <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" class="feature-icon" alt="Global Reach" />
+    <h2>Global Reach</h2>
+    <p>Support any cause globally with just one click.</p>
+  </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works" data-aos="zoom-in-up">
+  <h2>How It Works</h2>
+  <div class="steps">
+    <div class="card-box step" data-aos="fade-up" data-aos-delay="100">
+      <img src="https://cdn-icons-png.flaticon.com/512/1047/1047711.png" class="step-icon" alt="Connect Wallet" />
+      <h3>1. Connect Wallet</h3>
+      <p>Securely link your crypto wallet to begin donating.</p>
+    </div>
+    <div class="card-box step" data-aos="fade-up" data-aos-delay="200">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png" class="step-icon" alt="Choose Cause" />
+      <h3>2. Choose a Cause</h3>
+      <p>Browse and select verified social or environmental causes.</p>
+    </div>
+    <div class="card-box step" data-aos="fade-up" data-aos-delay="300">
+      <img src="https://cdn-icons-png.flaticon.com/512/1029/1029183.png" class="step-icon" alt="Make Donation" />
+      <h3>3. Make a Donation</h3>
+      <p>Use blockchain to send direct, traceable support instantly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials" data-aos="fade-up">
+  <h2>What Donors Say</h2>
+  <div class="testimonial-cards">
+    <div class="card-box" data-aos="fade-right">
+      <img src="https://cdn-icons-png.flaticon.com/512/194/194938.png" class="testimonial-icon" alt="User 1" />
+      <p><em>"I love how transparent the donations are. I can track every rupee I send!"</em></p>
+      <strong>- Anjali M.</strong>
+    </div>
+    <div class="card-box" data-aos="fade-left">
+      <img src="https://cdn-icons-png.flaticon.com/512/194/194935.png" class="testimonial-icon" alt="User 2" />
+      <p><em>"Supporting global causes has never been this easy and trustworthy."</em></p>
+      <strong>- Ramesh K.</strong>
+    </div>
+  </div>
+</section>
+
+  <!-- HIGHLIGHT: Added Contact Section -->
+  <!-- Contact -->
+<section class="contact" data-aos="fade-up">
+  <h2>Contact Us</h2>
+  <div class="card-box">
+    <p>If you have any questions, partnerships, or support issues, reach out to us:</p>
+    <ul>
+      <li>Email: <a href="mailto:support@givechain.org">support@givechain.org</a></li>
+      <li>Phone: +91 98765 43210</li>
+      <li>Address: 101 Blockchain Lane, Mumbai, India</li>
+    </ul>
+  </div>
+</section>
+ 
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GiveChain. All rights reserved.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="aos/aos.js"></script>
+  <script src="scrollreveal/scrollreveal.js"></script>
+  <script>
+    AOS.init();
+
+    // ScrollReveal animations
+    ScrollReveal().reveal('.feature', { delay: 200, duration: 1000, origin: 'bottom', distance: '50px' });
+    ScrollReveal().reveal('.step', { interval: 200, distance: '40px' });
+    ScrollReveal().reveal('.testimonial', { interval: 300 });
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
